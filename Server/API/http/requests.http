@@ -1,0 +1,23 @@
+
+GET http://{{host}}:{{port}}/{{endpoint}}
+Accept: application/json
+
+###
+GET http://{{host}}:{{port}}/{{endpoint}}/user/5ef4eee3daef2632789d259a
+Accept: application/json
+
+###
+
+POST http://{{host}}:{{port}}/{{endpoint}}/user/
+Content-Type: application/json
+
+{
+  "name": "andrea",
+  "email": "andr@a.gr",
+  "age": 34,
+  "password": "3432423fds"
+}
+
+
+
+
