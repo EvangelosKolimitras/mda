@@ -1,0 +1,37 @@
+@import 'mixins/breakpoints';
+@import "scrollbar";
+
+$_global_font_size: 62.5%;
+$_global_font_color: rgb(222, 210, 223);
+$_global_font_family: "Consolas";
+$_global_bgColor: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $_global_font_size;
+  color: $_global_font_color;
+  font-family: $_global_font_family;
+  background: $_global_bgColor;
+
+  @include break(tablet) {
+    font-size: 60%;
+  }
+
+  @include break(phone) {
+    font-size: 50%;
+  }
+
+  @include break(desktop) {
+    font-size: 80%;
+  }
+
+}

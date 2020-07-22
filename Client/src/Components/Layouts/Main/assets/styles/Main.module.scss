@@ -1,0 +1,31 @@
+@import "../../../../../assets//styles/_globals__";
+$bgMainColor: rgba(0, 0, 0, 0.137);
+
+.Main {
+  padding: 1rem;
+  width: 100%;
+  background-color: $bgMainColor;
+
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  display: grid;
+  grid-gap: .5rem;
+  grid-template-columns: repeat(auto-fit,minmax(min-content,1fr));
+  grid-template-rows: 5rem repeat(auto-fill,minmax(min-content,1fr));
+
+  overflow-y: scroll;
+  &:hover {
+    background-color: darken($bgMainColor, 15%);
+
+    & > &__title > h1 {
+      color: lighten($_global_font_color, 25%);
+    }
+  }
+
+  @include break(phone) {
+    grid-template-columns: repeat(auto-fit,minmax(min-content,1fr));
+    grid-template-rows: 2rem repeat(auto-fit,minmax(min-content,1fr));
+  }
+
+}

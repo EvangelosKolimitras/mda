@@ -1,0 +1,11 @@
+@import "../../../../../assets/styles/_globals__";
+$bgDetailsColor: rgba(0, 0, 0, 0.171);
+
+.Details {
+  padding: 1rem;
+  border-radius: 1rem;
+
+  &:hover {
+    background-color: lighten($bgDetailsColor, 10%);
+  }
+}

@@ -1,0 +1,22 @@
+$bgScrollBar: rgba(0, 0, 0, 0.11);
+
+::-webkit-scrollbar {
+  position: relative;
+  width: 0.6589rem;
+  height: 25%;
+
+  &-track {
+    box-shadow: inset 0 0 0.5rem rgb(0, 0, 0);
+    border-radius: 1rem;
+    margin: 0.2rem 0 0.5rem 0;
+  }
+
+  &-thumb {
+    background: $bgScrollBar;
+    border-radius: 1rem;
+
+    &:hover {
+      background: darken(rgba($bgScrollBar,.25), 15%);
+    }
+  }
+}

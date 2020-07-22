@@ -1,0 +1,12 @@
+@import "../../../../../assets/styles/_globals__";
+$bgFigureColor: rgba(0, 0, 0, 0.171);
+
+.Figure {
+  padding: 1rem;
+  border-radius: 1rem;
+  // grid-column: 2/3;
+
+  &:hover {
+    background-color: lighten($bgFigureColor, 10%);
+  }
+}

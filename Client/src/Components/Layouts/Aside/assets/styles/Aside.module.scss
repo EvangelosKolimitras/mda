@@ -1,0 +1,24 @@
+@import "../../../../../assets/styles/_globals__";
+$bgAsideColor: rgba(0, 0, 0, 0.164);
+
+.Aside {
+  padding: 1rem;
+  width: 100%;
+  background-color: $bgAsideColor;
+
+  grid-column:2/-1;
+  grid-row: 2/3;
+
+
+  // overflow-y: scroll;
+
+  &:hover {
+    background-color: lighten($bgAsideColor, 10%);
+  }
+
+
+  @include break(phone){
+    grid-column:1/-1;
+    grid-row: 3/4;
+  }
+}

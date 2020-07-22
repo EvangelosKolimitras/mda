@@ -1,0 +1,12 @@
+@import "../../../../../assets/styles/_globals__";
+$bgTimeColor: rgba(0, 0, 0, 0.171);
+
+.Time {
+  padding: 1rem;
+  border-radius: 1rem;
+  // grid-column: 1/2;
+  
+  &:hover {
+    background-color: lighten($bgTimeColor, 10%);
+  }
+}

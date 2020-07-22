@@ -1,0 +1,20 @@
+@import "../../../../../assets/styles/_globals__";
+$bgFooterColor:rgba(0, 0, 0, 0.178);
+
+.Footer {
+  padding: 1rem;
+  width: 100%;
+  background-color: $bgFooterColor;
+
+  grid-column: 1/-1;
+  grid-row: 4/-1;
+
+  &:hover {
+    background-color: lighten(rgba($bgFooterColor,.25), 10%);
+  }
+
+  @include break(phone){
+    grid-column: 1/-1;
+    grid-row: 4/-1;
+  }
+}

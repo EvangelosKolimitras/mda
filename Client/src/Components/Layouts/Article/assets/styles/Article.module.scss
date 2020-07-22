@@ -1,0 +1,11 @@
+@import "../../../../../assets/styles/_globals__";
+$bgArticleColor: rgba(0, 0, 0, 0.034);
+
+.Article {
+  padding: 1rem;
+  // @include Component(1rem, $bgArticleColor, null,1rem);
+
+  &:hover {
+    background-color: darken(rgba($bgArticleColor,.1), 5%);
+  }
+}

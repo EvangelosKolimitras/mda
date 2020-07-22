@@ -1,0 +1,22 @@
+@import "../../../../../assets/styles/_globals__";
+$bgSectionColor: rgba(0, 0, 0, 0.247);
+
+.Section {
+  position: relative;
+  padding: 1rem;
+  background-color: $bgSectionColor;
+  border-radius: 1rem;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min-content, 30rem));
+  grid-template-rows: 5rem 1fr;
+
+  &__title {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+
+  &:hover {
+    background-color: darken(rgba($bgSectionColor,.5), 15%);
+  }
+}

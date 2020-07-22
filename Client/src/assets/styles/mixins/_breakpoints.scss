@@ -1,0 +1,14 @@
+@mixin break($breakpoint) {
+    @if $breakpoint == phone {
+      @media (max-width:37.5em) { @content }
+    };
+    @if $breakpoint == tablet {
+      @media (max-width:56.25em) { @content }
+    };
+    @if $breakpoint == tablet-landscape {
+      @media (max-width:75em) { @content }
+    };
+    @if $breakpoint == desktop {
+      @media (min-width:112.5em) { @content }
+    };
+}
