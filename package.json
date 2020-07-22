@@ -1,0 +1,29 @@
+{
+  "name": "mda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "MDA stands for MERN | Docker | AWS. Is a full stack template software with various technologies, such as Authentication system with Auth2.0, management caching with Redis and application clustering with the node-cluster module and pm2.",
+  "license": "MIT",
+  "author": {
+    "name": "Evangelos Kolimitras",
+    "email": "evangeloskolimitras@outlook.com"
+  },
+  "files": [
+    "index.js",
+    "Client",
+    "Server",
+    "Config"
+  ],
+  "maintainers": [
+    "Evangelos Kolimitras"
+  ],
+  "contributors": [
+    "Evangelos Kolimitras"
+  ],
+  "dependencies": {
+    "@Config/env": "file:Config",
+    "@internal/mda-server": "file:Server",
+    "@internals/mda-client": "file:Client",
+    "eslint": "^7.3.1"
+  }
+}

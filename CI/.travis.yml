@@ -1,0 +1,21 @@
+language: node_js
+version:
+  - "8"
+dist: trusty
+
+services:
+  - redis-server
+  - mongodb
+
+env:
+  - NODE_ENV=ci
+
+cache:
+  - directories:
+      - Server/node_modules
+      - Client/node_modules
+      - node_modules
+
+install:
+  - npm install
+  - npm run build

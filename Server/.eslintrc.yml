@@ -1,0 +1,24 @@
+env:
+  browser: true
+  commonjs: true
+  es2020: true
+extends:
+  - airbnb-base
+parserOptions:
+  ecmaVersion: 11
+rules:
+  space-in-parens: error
+  max-len: off
+  no-unused-vars: off
+  no-mixed-spaces-and-tabs: error
+  no-undef: off
+  no-multi-assign: 0
+  camelcase: off
+  semi: off
+  func-names: off
+  import/no-extraneous-dependencies: 0
+  no-console: 0
+  import/order: 0
+  no-plusplus: 0
+  global-require: 0
+
