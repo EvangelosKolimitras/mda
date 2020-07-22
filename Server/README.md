@@ -8,7 +8,7 @@ ___
 * ###### `SSR with EJS as a Templating Engine`
 * ###### `API Design system implemented`
 * ###### `Protected routes`
-* ###### `Auth2.0 system integration`
+* ###### `Auth2.0 system integration(TBA)`
 * ###### `PM2 Integration - Deep server analysis`
 * ###### `NodeJS Clustering backup system implemented for PM2`
-* ###### `Express Compression system`
+* ###### `Express Compression system(TBA)`
